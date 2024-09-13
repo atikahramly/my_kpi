@@ -1,0 +1,44 @@
+.allTable {
+    font-family: "Raleway", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .allTable td,
+  .allTable th {
+    border: 1px solid #616161;
+    padding: 8px;
+  }
+  
+  .allTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #E21F3D;
+    color: #E0E3F0;
+  }
+  
+  .allTable td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    font-weight: bold;
+    background-color: #FBFCFF;
+    color: #F94765;
+  }
+  
+  
+  .edit_btn {
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    width: 50px;
+  }
+  
+  .btnbtn {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 15px;
+  }

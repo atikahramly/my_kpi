@@ -1,0 +1,269 @@
+body {
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #fbcfb6;
+  margin: 0;
+}
+
+h2 {
+  font-size: 25pt;
+  background-color: white;
+  color: #db4d5f;
+  padding: 15px;
+  text-align: center;
+}
+
+.header {
+  background: url("../img/ums.png") center/cover no-repeat;
+  height: 500px;
+  text-align: left;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.header img {
+  translate: -50%;
+}
+
+/* --------------------------------------
+   Style the top navigation bar 
+-----------------------------------------*/
+.navbar {
+  width: 100%;
+  background-color: #f5b48e;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 15px;
+  color: #db4d5f;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover  {
+  background-color: #ffffff;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.navbar a.split {
+  float: right;
+  background-color: #FC726D;
+  color: white;
+}
+
+.navbar a.split:hover  {
+  background-color: #061037;
+  color: #E99797;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+/*===========================================
+  CSS when pages are resized to smaller or 
+  for mobile screen
+===========================================*/
+@media screen and (max-width: 800px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/* ----------------------------------
+   banner
+  -----------------------------------*/
+.banner {
+  background-image: url("../img/ums.png");
+  width: 100%;
+  height: 850px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: center;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+/* ---------------------------------- 
+    Form
+    -----------------------------------*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 8px;
+  width: 500px;
+}
+
+form input {
+  font-family: inherit;
+  padding: 20px 20px 20px 10px;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+  color: #4a4a4a;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+ .login_btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 13px;
+  text-align: center;
+  background-color: #db4d5f;
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 15px;
+  width: 100%;
+}
+
+/* ---------------------------------- 
+    news + announcement
+    -----------------------------------*/
+.newsDiv {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);;
+  color: black;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* My image */
+img.avatar {
+  width: 40%;
+  border-radius: 10%;
+}
+
+.avatar {
+  width: 10px;
+}
+
+/*========================================================
+  CSS used for responsive div in profile table
+==========================================================*/
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col-left {
+  text-align: center;
+  flex: 20%;
+  padding: 15px;
+}
+.col-right {
+  flex: 50%;
+  padding: 15px;
+}
+
+@media (max-width: 786px) {
+  .col-left {
+    flex: 90%;
+  }
+}
+
+.header h1 {
+  background-color: transparent;
+  font-size: 30pt;
+}
+
+h1 {
+  background-color: #F3DDB3;
+  color: #000000;
+}
+
+.avatar {
+  width: 10px;
+}
+
+/*========================================================
+  Challenges table.
+==========================================================*/
+#projectable {
+  border-collapse: collapse;
+  width: 100%;
+  padding-left: 30px;
+}
+#projectable td,
+#projectable th {
+  border: 1px solid #616161;
+  padding: 8px;
+}
+#projectable tr:nth-child(even) {
+  background-color: #ddd;
+}
+#projectable tr:hover {
+  background-color: #c8b4ba;
+}
+#projectable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: black;
+}
+#projectable td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: black;
+}
